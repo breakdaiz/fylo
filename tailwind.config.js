@@ -4,7 +4,7 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
-      olors: {
+      colors: {
         darkBlue: "hsl(217, 28%, 15%)",
         darkBlue1: "hsl(218, 28%, 13%)",
         darkBlue2: "hsl(216, 53%, 9%)",
