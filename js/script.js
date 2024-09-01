@@ -1,5 +1,6 @@
 var themeToggleDarkIcon = document.getElementById("theme-toggle-dark-icon");
 var themeToggleLightIcon = document.getElementById("theme-toggle-light-icon");
+var themeToggleBtn = document.getElementById("theme-toggle");
 
 // Change the icons inside the button based on previous settings
 if (
@@ -12,7 +13,7 @@ if (
   themeToggleDarkIcon.classList.remove("hidden");
 }
 
-var themeToggleBtn = document.getElementById("theme-toggle");
+
 
 themeToggleBtn.addEventListener("click", function () {
   // toggle icons inside button
