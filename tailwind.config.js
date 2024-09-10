@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./*.html"],
-  darkMode: 'class',
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -12,10 +12,12 @@ module.exports = {
         accentCyan: "hsl(176, 68%, 64%)",
         accentBlue: "hsl(198, 60%, 50%)",
         lightRed: "hsl(0, 100%, 63%)",
+        lightViolet: "#9C83FF",
+        lightOrange: "#FF9051",
       },
       fontFamily: {
-        sans: ["Raleway", "sans-serif"],
-        opensans: ["Open Sans", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
       },
       backgroundImage: theme => ({
         "logo-dark-mode": "url('../images/logo-dark-mode.svg')",
@@ -25,13 +27,13 @@ module.exports = {
       }),
     },
   },
-  variants : {
+  variants: {
     extend: {
-      backgroundImage:['dark']
-    }
+      backgroundImage: ["dark"],
+    },
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/aspect-ratio"),
+    // ...
+  ],
 };
-
-
-
